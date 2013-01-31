@@ -1,0 +1,6 @@
+<% @shirts.each do |shirt| %>
+  <div class="shirt">
+    <h3 class="name"><%= link_to shirt.name, shirt %></h3>
+    <div class="price"><%= shirt.price %></div>
+  </div>
+<% end %>

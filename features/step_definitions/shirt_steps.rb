@@ -19,18 +19,24 @@ end
 
 When /^I choose a collar$/ do
   click_link('Customize Now')
+  click_link('Cutaway')
+  click_link('Next')
 end
 
 When /^I choose cuffs$/ do
-  pending # express the regexp above with the code you wish you had
+  click_link('Two Button Barrel')
+  click('Next')
 end
 
 When /^I create a monogram$/ do
-  pending # express the regexp above with the code you wish you had
+  fill_in('Text', with: 'JJH')
+  choose('Cuff')
+  click_link('.standard')
+  click_link('.silver')
 end
 
 When /^I checkout$/ do
-  pending # express the regexp above with the code you wish you had
+  click_link('Checkout')
 end
 
 Then /^I should see a purchase confirmation$/ do

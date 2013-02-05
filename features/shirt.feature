@@ -10,5 +10,7 @@ Feature: Shirt
     And I choose a collar
     And I choose cuffs
     And I create a monogram
+    And I enter my measurements
+    And I enter my body shape
     And I checkout
     Then I should see a purchase confirmation

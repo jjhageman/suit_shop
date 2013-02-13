@@ -1,4 +1,4 @@
 <h1><%= @shirt.name %></h1>
-<div class="price"><%= @shirt.price %></div>
+<div class="price"><%= number_to_currency @shirt.price %></div>
 <p><%= @shirt.description %></p>
 <%= link_to 'Customize Now', new_order_path, class: 'btn btn-primary' %>

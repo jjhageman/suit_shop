@@ -35,6 +35,14 @@ When /^I create a monogram$/ do
   click_link('.silver')
 end
 
+When /^I enter my measurements$/ do
+  pending # express the regexp above with the code you wish you had
+end
+
+When /^I enter my body shape$/ do
+  pending # express the regexp above with the code you wish you had
+end
+
 When /^I checkout$/ do
   click_link('Checkout')
 end

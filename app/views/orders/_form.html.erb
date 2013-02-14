@@ -1,31 +1,119 @@
+<div id="customize">
 <ul class="bxslider">
   <li id="collar">
     <ul class="customization-options">
-      <li><%= image_tag 'collars/medium_point.png' %></li>
-      <li><%= image_tag 'collars/classic_point.png' %></li>
-      <li><%= image_tag 'collars/small_point.png' %></li>
-      <li><%= image_tag 'collars/spread.png' %></li>
-      <li><%= image_tag 'collars/large_spread.png' %></li>
-      <li><%= image_tag 'collars/cutaway.png' %></li>
-      <li><%= image_tag 'collars/button_down.png' %></li>
+      <li data-item="medium_point">
+        <%= image_tag 'collars/medium_point.png' %>
+        <%= image_tag 'checkmark.png', class: 'checkmark' %>
+        <h4>Medium Point</h4>
+      </li>
+      <li>
+        <%= image_tag 'collars/classic_point.png' %>
+        <%= image_tag 'checkmark.png', class: 'checkmark' %>
+        <h4>Classic Point</h4>
+      </li>
+      <li>
+        <%= image_tag 'collars/small_point.png' %>
+        <%= image_tag 'checkmark.png', class: 'checkmark' %>
+        <h4>Small Point</h4>
+      </li>
+      <li>
+        <%= image_tag 'collars/spread.png' %>
+        <%= image_tag 'checkmark.png', class: 'checkmark' %>
+        <h4>Spread</h4>
+      </li>
+      <li>
+        <%= image_tag 'collars/large_spread.png' %>
+        <%= image_tag 'checkmark.png', class: 'checkmark' %>
+        <h4>Large Spread</h4>
+      </li>
+      <li>
+        <%= image_tag 'collars/cutaway.png' %>
+        <%= image_tag 'checkmark.png', class: 'checkmark' %>
+        <h4>Cutaway</h4>
+      </li>
+      <li>
+        <%= image_tag 'collars/button_down.png' %>
+        <%= image_tag 'checkmark.png', class: 'checkmark' %>
+        <h4>Button Down</h4>
+      </li>
     </ul>
   </li>
   <li id="cuffs">
     <ul class="customization-options">
-      <li><%= image_tag 'cuffs/two_button_barrel.png' %></li>
-      <li><%= image_tag 'cuffs/two_button_angled.png' %></li>
-      <li><%= image_tag 'cuffs/two_button_rounded.png' %></li>
-      <li><%= image_tag 'cuffs/one_button_angled.png' %></li>
-      <li><%= image_tag 'cuffs/one_button_rounded.png' %></li>
-      <li><%= image_tag 'cuffs/french_cuffs_barrel.png' %></li>
+      <li>
+        <%= image_tag 'checkmark.png', class: 'checkmark' %>
+        <%= image_tag 'cuffs/two_button_barrel.png' %>
+        <h4>Two Button Barrel</h4>
+      </li>
+      <li>
+        <%= image_tag 'checkmark.png', class: 'checkmark' %>
+        <%= image_tag 'cuffs/two_button_angled.png' %>
+        <h4>Two Button Angled</h4>
+      </li>
+      <li>
+        <%= image_tag 'checkmark.png', class: 'checkmark' %>
+        <%= image_tag 'cuffs/two_button_rounded.png' %>
+        <h4>Two Button Rounded</h4>
+      </li>
+      <li>
+        <%= image_tag 'checkmark.png', class: 'checkmark' %>
+        <%= image_tag 'cuffs/one_button_angled.png' %>
+        <h4>One Button Angled</h4>
+      </li>
+      <li>
+        <%= image_tag 'checkmark.png', class: 'checkmark' %>
+        <%= image_tag 'cuffs/one_button_rounded.png' %>
+        <h4>One Button Rounded</h4>
+      </li>
+      <li>
+        <%= image_tag 'checkmark.png', class: 'checkmark' %>
+        <%= image_tag 'cuffs/french_cuffs_barrel.png' %>
+        <h4>French Cuffs Barrel</h4>
+      </li>
+      <li>
+        <%= image_tag 'checkmark.png', class: 'checkmark' %>
+        <%= image_tag 'cuffs/french_cuffs_angled.png' %>
+        <h4>French Cuffs Angled</h4>
+      </li>
     </ul>
   </li>
   <li id="monogram">
-  <div class="customization-options">Monogram</div>
+    <div class="customization-options">
+      <h3>TEXT</h3>
+      <input type="text" id="Shirt_Monogram_Line_1" name="customizations[Shirt][Monogram Line 1]" maxlength="3" size="6" placeholder="(max 3 characters)">
+      <h3>LOCATION</h3>
+      <ul>
+        <li>
+          <input type="radio" name="customizations[Shirt][Monogram Location]" value="Cuff" id="Shirt_Monogram_Location_Cuff"> <label for="Shirt_Monogram_Location_Cuff">Cuff</label>&nbsp;&nbsp;
+          <input type="radio" name="customizations[Shirt][Monogram Location]" value="Chest" id="Shirt_Monogram_Location_Chest"> <label for="Shirt_Monogram_Location_Chest">Chest</label>
+        </li>
+    	</ul>
+      <div class="clearfix">
+        		<div class="Style" product_class="Shirt" label="Monogram Style">
+        			<h3>FONT</h3>
+        			<ul class="choosable clearfix">
+        				        				<li class="customization-option selected" option_value="Standard"><img src="http://d3dgk6r8ca2pzn.cloudfront.net/images/customization/font/standard.png"></li>
+        				        				<li class="customization-option" option_value="Diamond"><img src="http://d3dgk6r8ca2pzn.cloudfront.net/images/customization/font/diamond.png"></li>
+        				        			</ul>
+        			<input type="hidden" name="customizations[Shirt][Monogram Style]" value="Standard">
+        		</div>
+        		<div class="Color" product_class="Shirt" label="Monogram Color">
+        			<h3>COLOR</h3>
+        			<ul class="choosable clearfix">
+        				<li option_value="White" class="customization-option white selected">&nbsp;</li>
+        				<li option_value="Silver Gray" class="customization-option silvergray">&nbsp;</li>
+        				<li option_value="Blue" class="customization-option blue">&nbsp;</li>
+        			</ul>
+        			<input type="hidden" name="customizations[Shirt][Monogram Color]" value="White">
+        		</div>
+        	</div>
+    </div>
   </li>
 </ul>
 
-<div class="outside">
-  <h3>This div is outside of the slider</h3>
-  <p><span id="slider-prev"></span> | <span id="slider-next"></span></p>
+<div id="cust_nav">
+  <span id="slider-prev"></span>
+  <span id="slider-next"></span>
+</div>
 </div>

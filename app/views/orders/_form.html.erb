@@ -83,19 +83,22 @@
       <h3>TEXT</h3>
       <input type="text" id="Shirt_Monogram_Line_1" name="customizations[Shirt][Monogram Line 1]" maxlength="3" size="6" placeholder="(max 3 characters)">
       <h3>LOCATION</h3>
-      <ul>
-        <li>
-          <input type="radio" name="customizations[Shirt][Monogram Location]" value="Cuff" id="Shirt_Monogram_Location_Cuff"> <label for="Shirt_Monogram_Location_Cuff">Cuff</label>&nbsp;&nbsp;
-          <input type="radio" name="customizations[Shirt][Monogram Location]" value="Chest" id="Shirt_Monogram_Location_Chest"> <label for="Shirt_Monogram_Location_Chest">Chest</label>
-        </li>
-    	</ul>
+      <div class="form-inline">
+        <label class="radio">
+        <input type="radio" name="customizations[Shirt][Monogram Location]" value="Cuff" id="Shirt_Monogram_Location_Cuff"> Cuff
+      </label>
+      &nbsp;&nbsp;
+        <label class="radio">
+          <input type="radio" name="customizations[Shirt][Monogram Location]" value="Chest" id="Shirt_Monogram_Location_Chest"> Chest
+      </label>
+        </div>
       <div class="clearfix">
         		<div class="Style" product_class="Shirt" label="Monogram Style">
         			<h3>FONT</h3>
         			<ul class="choosable clearfix">
-        				        				<li class="customization-option selected" option_value="Standard"><img src="http://d3dgk6r8ca2pzn.cloudfront.net/images/customization/font/standard.png"></li>
-        				        				<li class="customization-option" option_value="Diamond"><img src="http://d3dgk6r8ca2pzn.cloudfront.net/images/customization/font/diamond.png"></li>
-        				        			</ul>
+        				<li class="customization-option selected" option_value="Standard"><img src="http://d3dgk6r8ca2pzn.cloudfront.net/images/customization/font/standard.png"></li>
+        				<li class="customization-option" option_value="Diamond"><img src="http://d3dgk6r8ca2pzn.cloudfront.net/images/customization/font/diamond.png"></li>
+        			</ul>
         			<input type="hidden" name="customizations[Shirt][Monogram Style]" value="Standard">
         		</div>
         		<div class="Color" product_class="Shirt" label="Monogram Color">

@@ -3,6 +3,7 @@ Feature: Shirt
   As a user
   I want to be able to customize and purchas shirts
 
+  @javascript
   Scenario: User purchase customized shirt
     Given I am a visitor
     And 5 shirts

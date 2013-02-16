@@ -19,13 +19,13 @@ end
 
 When /^I choose a collar$/ do
   click_link('Customize Now')
-  click_link('Cutaway')
-  click_link('Next')
+  find(:xpath, '//li[@data-item="cutaway"]').click
+  click_link('slider-next')
 end
 
 When /^I choose cuffs$/ do
-  click_link('Two Button Barrel')
-  click('Next')
+  find(:xpath, '//li[@data-item="cutaway"]').click
+  click('slider-next')
 end
 
 When /^I create a monogram$/ do

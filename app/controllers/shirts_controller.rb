@@ -1,6 +1,8 @@
 class ShirtsController < ApplicationController
   def index
-    @shirts = Shirt.all
+    @shirts = []
+    8.times { @shirts << Shirt.all.first }
+    #@shirts = Shirt.all
   end
 
   def show

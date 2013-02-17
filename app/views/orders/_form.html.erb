@@ -96,15 +96,19 @@
         		<div class="Style" product_class="Shirt" label="Monogram Style">
         			<h3>FONT</h3>
         			<ul class="choosable clearfix">
-        				<li class="customization-option selected" option_value="Standard"><img src="http://d3dgk6r8ca2pzn.cloudfront.net/images/customization/font/standard.png"></li>
-        				<li class="customization-option" option_value="Diamond"><img src="http://d3dgk6r8ca2pzn.cloudfront.net/images/customization/font/diamond.png"></li>
+                <li class="customization-option" option_value="Standard">
+                <%= image_tag 'monogram/standard.png' %>
+                </li>
+                <li class="customization-option" option_value="Diamond">
+                <%= image_tag 'monogram/diamond.png' %>
+                </li>
         			</ul>
         			<input type="hidden" name="customizations[Shirt][Monogram Style]" value="Standard">
         		</div>
         		<div class="Color" product_class="Shirt" label="Monogram Color">
         			<h3>COLOR</h3>
         			<ul class="choosable clearfix">
-        				<li option_value="White" class="customization-option white selected">&nbsp;</li>
+        				<li option_value="White" class="customization-option white">&nbsp;</li>
         				<li option_value="Silver Gray" class="customization-option silvergray">&nbsp;</li>
         				<li option_value="Blue" class="customization-option blue">&nbsp;</li>
         			</ul>
@@ -113,10 +117,57 @@
         	</div>
     </div>
   </li>
+  <li id="measurements">
+  <div class="form-horizontal">
+    <h3>Enter Your Measurements</h3>
+    <div class="control-group">
+    <label class="control-label">Height</label>
+    <div class="controls">
+    <select id="height_feet" class="span1">
+      <option value="4" selected="selected">4</option> 
+      <option value="5">5</option> 
+      <option value="6">6</option> 
+      <option value="7">7</option> 
+    </select>
+    <span class="tip">ft</span>
+    <select id="height_inches" class="span1"> 
+       <option value="0" selected="selected">0</option> 
+       <option value="1">1</option> 
+       <option value="2">2</option> 
+       <option value="3">3</option> 
+       <option value="4">4</option> 
+       <option value="5">5</option> 
+       <option value="6">6</option> 
+       <option value="7">7</option> 
+       <option value="8">8</option> 
+       <option value="9">9</option> 
+       <option value="10">10</option> 
+       <option value="11">11</option> 
+     </select>
+     <span class="tip">in</span>
+     </div>
+   </div>
+     <div class="control-group">
+       <label class="control-label" for="weight">Weight</label>
+       <div class="controls">
+        <input type="text" id="weight" class="span1">
+        <span class="tip">lbs</span>
+      </div>
+     </div>
+     <div class="control-group">
+       <label class="control-label" for="age">Age</label>
+       <div class="controls">
+        <input type="text" id="age" class="span1">
+        <span class="tip">years old</span>
+      </div>
+     </div>
+   </div>
+  </li>
 </ul>
 
 <div id="cust_nav">
   <span id="slider-prev"></span>
   <span id="slider-next"></span>
+  <span id="slider-checkout" style="display: none;"><a href="/checkout">CHECKOUT</a></span>
 </div>
 </div>

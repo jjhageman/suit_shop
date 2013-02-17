@@ -1,5 +1,6 @@
 <% @shirts.each do |shirt| %>
   <div class="shirt">
+    <%= link_to image_tag('shirts/1357528259.1634842692.primary.original.jpg'), shirt %>
     <h3 class="name"><%= link_to shirt.name, shirt %></h3>
     <div class="price"><%= number_to_currency shirt.price %></div>
   </div>
